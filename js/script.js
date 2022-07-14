@@ -194,6 +194,10 @@
             showCancelButton: true,
             inputValidator: (value) => {
                 
+                    if (!value) {
+                      return 'Selecciona una opción'
+                    }
+                  
                 switch (value) {
                     case 'Asistencia_emocional':
                         Swal.fire({
