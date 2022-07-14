@@ -194,9 +194,10 @@
             showCancelButton: true,
             inputValidator: (value) => {
                 
-                    if (!value) {
-                      return 'Selecciona una opción'
-                    }
+                //If the user doesn't choose something
+                if (!value) {
+                    return 'Selecciona una opción'
+                }
                   
                 switch (value) {
                     case 'Asistencia_emocional':
@@ -720,7 +721,117 @@
                         break
                         
                     case 'Horarios_equivocados':
-                        alert(`Haz seleccionado "Horarios equivocados"`);
+
+                        function marcos_hs_equivocados(){
+                            Swal.fire({
+                                //Text in the alert
+                                title: `<h6>Haz seleccionado <br>"Horarios equivocados"</h6>`,
+    
+                                //Img in the alert
+                                imageUrl: './Img_circle_staff/Circle_Modals/Marcos.png',
+                                imageWidth: 350,
+                                imageHeight: 300,
+                                imageAlt: 'Custom image',
+    
+                                //Propieties
+                                showCancelButton: true,
+                                showDenyButton: true,
+                                confirmButtonColor: '#d400d4',
+                                cancelButtonColor: '#00ccff',
+                                confirmButtonText: 'Enviar Mensaje',
+                                denyButtonText: `Sig. (ID: CO o AR)`,
+                                denyButtonColor: 'red',
+                                cancelButtonText: 'Volver al asistente',
+                                padding: '1.7rem',
+                                background: 'linear-gradient(360deg, rgb(9, 14, 53) ,#162052 70% )',
+                                color: '#00ccff',
+                              }).then((result) => {
+                                if (result.isConfirmed) {
+                                //True("Acept")
+                                window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                                //redireccionar a un link
+                                virtual_asistance_menu()
+                                }
+                                //+3 months
+                                else if (result.isDenied) {mauro_hs_equivocados()}
+                                
+                                //False("Volver al asistente")
+                                else {virtual_asistance_menu()}
+                            })}
+                        function mauro_hs_equivocados(){
+                            Swal.fire({
+                                //Text in the alert
+                                title: `<h6>Haz seleccionado <br>"Horarios equivocados"</h6>`,
+        
+                                //Img in the alert
+                                imageUrl: './Img_circle_staff/Circle_Modals/Mauro.png',
+                                imageWidth: 350,
+                                imageHeight: 300,
+                                imageAlt: 'Custom image',
+        
+                                //Propieties
+                                showCancelButton: true,
+                                showDenyButton: true,
+                                confirmButtonColor: '#d400d4',
+                                cancelButtonColor: '#00ccff',
+                                confirmButtonText: 'Enviar Mensaje',
+                                denyButtonText: `Sig. (ID: US o PE)`,
+                                denyButtonColor: 'rgb(209, 193, 50)',
+                                cancelButtonText: 'Volver al asistente',
+                                padding: '1.7rem',
+                                background: 'linear-gradient(360deg, rgb(9, 14, 53) ,#162052 70% )',
+                                color: '#00ccff',
+                                }).then((result) => {
+                                if (result.isConfirmed) {
+                                //True("Acept")
+                                window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                                //redireccionar a un link
+                                virtual_asistance_menu()
+                                }
+                                //to Mirna
+                                else if (result.isDenied) {mirla_hs_equivocados()}
+                                    
+                                //False("Volver al asistente")
+                                else {virtual_asistance_menu()}
+                            })}
+                        function mirla_hs_equivocados(){
+                                Swal.fire({
+                                    //Text in the alert
+                                    title: `<h6>Haz seleccionado <br>"Horarios equivocados"</h6>`,
+            
+                                    //Img in the alert
+                                    imageUrl: './Img_circle_staff/Circle_Modals/Mirla.jpg',
+                                    imageWidth: 350,
+                                    imageHeight: 300,
+                                    imageAlt: 'Custom image',
+            
+                                    //Propieties
+                                    showCancelButton: true,
+                                    showDenyButton: true,
+                                    confirmButtonColor: '#d400d4',
+                                    cancelButtonColor: '#00ccff',
+                                    confirmButtonText: 'Enviar Mensaje',
+                                    denyButtonText: `Sig. (ID: CH o MX)`,
+                                    denyButtonColor: '#4ecf1b',
+                                    cancelButtonText: 'Volver al asistente',
+                                    padding: '1.7rem',
+                                    background: 'linear-gradient(360deg, rgb(9, 14, 53) ,#162052 70% )',
+                                    color: '#00ccff',
+                                    }).then((result) => {
+                                    if (result.isConfirmed) {
+                                        
+                                    //True("Acept")
+                                    window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                                    //redireccionar a un link
+                                    virtual_asistance_menu()
+                                    }
+                                    //To Marcos
+                                    else if (result.isDenied) {marcos_hs_equivocados()}
+                                    
+                                    //False("Volver al asistente")
+                                    else {virtual_asistance_menu()}
+                            })}
+                        marcos_hs_equivocados()
                         break
             
                     case 'Inasistencias_consecutivas_del_alumno':
