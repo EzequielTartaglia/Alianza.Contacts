@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body
+{
+    align-items: center;
+    justify-content: center;  
+    background:rgb(9, 14, 53);
+    min-height: 100vh;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Animated title */
+    .wrapper{
+        margin-top: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .wrapper .static_txt{
+        color: #d400d4;
+        font-size: 5em;
+        font-weight: 550;
+    }
+    .wrapper .dynamic_txts{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+
+    }
+    .wrapper .dynamic_txts li{
+        list-style: none;
+        color: #00ccff;
+        font-size: 60px;
+        font-weight: 550;
+        position: relative;
+        top: 0;
+        animation: slide 6s steps(4) infinite;/* steps = spans in the ul */
+    }
+    @keyframes slide {
+        100%{
+            top: -360px
+        }
+    }
+
+    .wrapper .dynamic_txts li span{
+        position: relative;
+        
+    }
+    .wrapper .dynamic_txts li span::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        height: 130%;
+        width: 100%;
+        background: rgb(9, 14, 53);
+        border-left: 2px solid #00ccff;
+        animation: typing 1.5s steps(10) infinite;
+    }
+    @keyframes typing {
+        100%{
+            left: 100%;
+            margin: 0 -35px 0 35px;
+        }
+    }
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Start staff's circles  */
+    .staff_circles{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 25px;
+        justify-content: center;
+        min-height: 100vh;
+        background: rgb(9, 14, 53);
+    }
+    .box_circle{
+        position: relative;
+        width: 23rem;
+        height: 23rem;
+        background: rgba(0,0,0,0.5);
+        border-radius: 50%;
+        overflow: hidden;
+        margin:40px
+    }
+    .box_circle::before{
+        content: '';
+        position: absolute;
+        inset: -10px 140px;
+        background: linear-gradient(315deg,#00ccff,#d400d4);
+        transition: 0.5s;
+        animation: animate 4s linear infinite;
+    }
+    .box_circle:hover::before{
+        inset: -20px 0px;
+    }
+    @keyframes animate
+    {
+        /* Beginning of the loop */
+        0%
+        {
+            transform: rotate(0deg);
+        }
+        /* Final of the loop */
+        100%
+        {
+            transform: rotate(360deg);
+            
+        }
+    }
+    .box_circle::after{
+        content: '';
+        position: absolute;
+        inset: 6px;
+        background: #162052;
+        border-radius: 50%;
+        z-index: 1;      
+    }
+
+    .box_circle .content{
+        position: absolute;
+        inset: 30px;
+        border: 6px solid #070a1c;
+        z-index: 3;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;  
+    }
+        /* Circle img - staff */
+    .box_circle .content img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.5s;
+        pointer-events: none;
+        z-index: 3;
+    }
+    .box_circle:hover .content img{
+        opacity: 0;
+    }
+    .box_circle:hover .content h2{
+        position: relative;
+        font-size:1.5em ;
+        text-align: center;
+        color: #fff;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+    .box_circle:hover .content h2 span{
+    font-weight: 300;
+    font-size: 0.75em;
+    }
+    .box_circle:hover .content a{
+        position: relative;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background: #fff;
+        color:#070a1c;
+        border-radius: 25px;
+        font-weight: 500;
+        font-size: 1.25em;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    .box_circle:hover .content a:hover{
+        letter-spacing: 0.2em;
+        background: linear-gradient(315deg,#00ccff,#d400d4);
+        box-shadow: 0 0 2px #00ccff,
+        0 0 10px #00ccff,
+        0 0 20px #00ccff,
+        0 0 40px #00ccff;
+    }
+
+/*End staff's circles  */
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Disable the steps in number's input*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
