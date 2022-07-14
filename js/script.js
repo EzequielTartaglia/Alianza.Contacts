@@ -15,6 +15,8 @@
 //Asistencia emocional (Jesica) 
 //Inteligencia emocional (Jesica)
 
+//Alumnos bussines (Bianca)
+//Referidos para trabajar (Frank)
 
 //→→Functions←←
     //Function to receive the information about the teacher
@@ -371,7 +373,7 @@
                                 else if (result.isDenied) {isamara_capacitacion()}
                                 //False("Volver al asistente")
                                 else {virtual_asistance_menu()}
-                                })}                          
+                            })}                          
                                     
                         Swal.fire({
                             //Text in the alert
@@ -482,7 +484,7 @@
                                 else if (result.isDenied) {isamara_capacitacion_materiales()}
                                 //False("Volver al asistente")
                                 else {virtual_asistance_menu()}
-                                })}                          
+                            })}                          
                                     
                         Swal.fire({
                             //Text in the alert
@@ -520,107 +522,7 @@
                             else {virtual_asistance_menu()}
                             })
                         break
-                        Swal.fire({
-                            //Text in the alert
-                            title: `<h6>Haz seleccionado <br>"Materiales"</h6>`,
-
-                            //Img in the alert
-                            imageUrl: './Img_circle_staff/Circle_Modals/Isamara.png',
-                            imageWidth: 350,
-                            imageHeight: 300,
-                            imageAlt: 'Custom image',
-
-                            //Propieties
-                            showCancelButton: true,
-                            showDenyButton: true,
-                            confirmButtonColor: '#d400d4',
-                            cancelButtonColor: '#00ccff',
-                            confirmButtonText: 'Enviar Mensaje',
-                            denyButtonText: `Tengo +3 meses`,
-                            denyButtonColor: '#4ecf1b',
-                            cancelButtonText: 'Volver al asistente',
-                            padding: '1.7rem',
-                            background: 'linear-gradient(360deg, rgb(9, 14, 53) ,#162052 70% )',
-                            color: '#00ccff',
-                          }).then((result) => {
-                            if (result.isConfirmed) {
-                            //True("Acept")
-                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
-                            //redireccionar a un link
-                            virtual_asistance_menu()
-                            }
-                            //+3 months
-                            else if (result.isDenied) {
-                                Swal.fire({
-                                    //Text in the alert
-                                    title: `<h6>Haz seleccionado <br>"Materiales"</h6>`,
-        
-                                    //Img in the alert
-                                    imageUrl: './Img_circle_staff/Circle_Modals/Santiago.png',
-                                    imageWidth: 350,
-                                    imageHeight: 300,
-                                    imageAlt: 'Custom image',
-        
-                                    //Propieties
-                                    showCancelButton: true,
-                                    showDenyButton: true,
-                                    confirmButtonColor: '#d400d4',
-                                    cancelButtonColor: '#00ccff',
-                                    confirmButtonText: 'Enviar Mensaje',
-                                    denyButtonText: `Tengo -3 meses`,
-                                    denyButtonColor: '#cf1b1b',
-                                    cancelButtonText: 'Volver al asistente',
-                                    padding: '1.7rem',
-                                    background: 'linear-gradient(360deg, rgb(9, 14, 53) ,#162052 70% )',
-                                    color: '#00ccff',
-                                  }).then((result) => {
-                                    if (result.isConfirmed) {
-                                    //True("Acept")
-                                    window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
-                                    //redireccionar a un link
-                                    virtual_asistance_menu()
-                                    }
-                                    //3 months
-                                    else if (result.isDenied) {
-                                        Swal.fire({
-                                            //Text in the alert
-                                            title: `<h6>Haz seleccionado <br>"Materiales"</h6>`,
-                
-                                            //Img in the alert
-                                            imageUrl: './Img_circle_staff/Circle_Modals/Isamara.png',
-                                            imageWidth: 350,
-                                            imageHeight: 300,
-                                            imageAlt: 'Custom image',
-                
-                                            //Propieties
-                                            showCancelButton: true,
-                                            confirmButtonColor: '#d400d4',
-                                            cancelButtonColor: '#00ccff',
-                                            confirmButtonText: 'Enviar Mensaje',
-                                            cancelButtonText: 'Volver al asistente',
-                                            padding: '1.7rem',
-                                            background: 'linear-gradient(360deg, rgb(9, 14, 53) ,#162052 70% )',
-                                            color: '#00ccff',
-                                          }).then((result) => {
-                                            if (result.isConfirmed) {
-                                            //True("Acept")
-                                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
-                                            //redireccionar a un link
-                                            virtual_asistance_menu()
-                                            }
-                                            //False("Volver al asistente")
-                                            else {virtual_asistance_menu()}
-                                            })
-                                    }
-                                    //False("Volver al asistente")
-                                    else {virtual_asistance_menu()}
-                                    })
-                            }
-                            //False("Volver al asistente")
-                            else {virtual_asistance_menu()}
-                            })
-                        break
-        
+                        
                     case 'Vacaciones_o_Feriados':
 
                         Swal.fire({
@@ -835,13 +737,171 @@
                         break
             
                     case 'Inasistencias_consecutivas_del_alumno':
-                        alert(`Haz seleccionado "Inasistencias consecutivas del alumno"`);
+
+                        Swal.fire({
+                            //Text in the alert
+                            title: `<h6>Haz seleccionado <br>"Inasistencias consecutivas del alumno"</h6>`,
+
+                            //Img in the alert
+                            imageUrl: './Img_circle_staff/Circle_Modals/Micaela.png',
+                            imageWidth: 350,
+                            imageHeight: 300,
+                            imageAlt: 'Custom image',
+
+                            //Propieties
+                            showCancelButton: true,
+                            showDenyButton: true,
+                            confirmButtonColor: '#d400d4',
+                            cancelButtonColor: '#00ccff',
+                            confirmButtonText: 'Enviar Mensaje',
+                            denyButtonText: `Completar formulario`,
+                            denyButtonColor: '#4ecf1b',
+                            cancelButtonText: 'Volver al asistente',
+                            padding: '1.7rem',
+                            background: 'linear-gradient(360deg, rgb(9, 14, 53) ,#162052 70% )',
+                            color: '#00ccff',
+                          }).then((result) => {
+                            if (result.isConfirmed) {
+                            //True("Acept")
+                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                            //redireccionar a un link
+                            virtual_asistance_menu()
+                            }
+
+                            //Form 
+                            else if (result.isDenied) {
+                            window.open("Link_del_formulario_a_modo_ejemplo" , '_blank');
+                            virtual_asistance_menu()
+                            }
+
+                            //False("Volver al asistente")
+                            else {virtual_asistance_menu()}
+                            })
+                        break
                         break
                 
                     case 'Planillas':
-                        alert(`Haz seleccionado "Planillas de asistencia del profesor"`);
-                        break
+
+                        function javier_planillas(){
+                            Swal.fire({
+                            //Text in the alert
+                            title: `<h6>Haz seleccionado <br>"Planillas de asistencia del profesor"</h6>`,
+    
+                            //Img in the alert
+                            imageUrl: './Img_circle_staff/Circle_Modals/Javier.png',
+                            imageWidth: 350,
+                            imageHeight: 300,
+                            imageAlt: 'Custom image',
+    
+                            //Propieties
+                            showCancelButton: true,
+                            showDenyButton: true,
+                            confirmButtonColor: '#d400d4',
+                            cancelButtonColor: '#00ccff',
+                            confirmButtonText: 'Enviar Mensaje',
+                            denyButtonText: `¿Como completarla?`,
+                            denyButtonColor: '#4ecf1b',
+                            cancelButtonText: 'Volver al asistente',
+                            padding: '1.7rem',
+                            background: 'linear-gradient(360deg, rgb(9, 14, 53) ,#162052 70% )',
+                            color: '#00ccff',
+                            }).then((result) => {
+                            if (result.isConfirmed) {
+
+                            //True("Acept")
+                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                            //redireccionar a un link
+                            virtual_asistance_menu()
+                            }
+
+                            //Questions
+                            else if (result.isDenied) {micaela_planillas()}
+                                
+                            //False("Volver al asistente")
+                            else {virtual_asistance_menu()}
+                            })}
+
+                        function micaela_planillas(){
+                                Swal.fire({
+                                //Text in the alert
+                                title: `<h6>Haz seleccionado <br>"Planillas de asistencia del profesor"</h6>`,
             
+                                //Img in the alert
+                                imageUrl: './Img_circle_staff/Circle_Modals/Micaela.png',
+                                imageWidth: 350,
+                                imageHeight: 300,
+                                imageAlt: 'Custom image',
+            
+                                //Propieties
+                                showCancelButton: true,
+                                showDenyButton: true,
+                                confirmButtonColor: '#d400d4',
+                                cancelButtonColor: '#00ccff',
+                                confirmButtonText: 'Enviar Mensaje',
+                                denyButtonText: `Dudas con codigo`,
+                                denyButtonColor: 'red',
+                                cancelButtonText: 'Volver al asistente',
+                                padding: '1.7rem',
+                                background: 'linear-gradient(360deg, rgb(9, 14, 53) ,#162052 70% )',
+                                color: '#00ccff',
+                                }).then((result) => {
+                                if (result.isConfirmed) {
+
+                                //True("Acept")
+                                window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                                //redireccionar a un link
+                                virtual_asistance_menu()
+                                 }
+
+                                //Error codes
+                                else if (result.isDenied) {javier_planillas()}
+
+                                //False("Volver al asistente")
+                                else {virtual_asistance_menu()}
+                            })}                          
+                                    
+                        Swal.fire({
+                            //Text in the alert
+                            title: `<h6>Haz seleccionado <br>"Planillas de asistencia del profesor"</h6>`,
+
+                            //Img in the alert
+                            imageUrl: './Img_circle_staff/Circle_Modals/Javier.png',
+                            imageWidth: 350,
+                            imageHeight: 300,
+                            imageAlt: 'Custom image',
+
+                            //Propieties
+                            showCancelButton: true,
+                            showDenyButton: true,
+                            confirmButtonColor: '#d400d4',
+                            cancelButtonColor: '#00ccff',
+                            confirmButtonText: 'Enviar Mensaje',
+                            denyButtonText: `¿Como completarla?`,
+                            denyButtonColor: '#4ecf1b',
+                            cancelButtonText: 'Volver al asistente',
+                            padding: '1.7rem',
+                            background: 'linear-gradient(360deg, rgb(9, 14, 53) ,#162052 70% )',
+                            color: '#00ccff',
+                          }).then((result) => {
+                            if (result.isConfirmed) {
+
+                            //True("Acept")
+                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                            //redireccionar a un link
+                            virtual_asistance_menu()
+                            }
+
+                            //Questions
+                            else if (result.isDenied) {
+                                micaela_planillas()}
+                                
+                            //False("Volver al asistente")
+                            else {virtual_asistance_menu()}
+                            })
+                        break
+
+
+                     
                     case 'Planillas_de_disponibilidad':
                         alert(`Haz seleccionado "Planillas de disponibilidad"`);
                         break
