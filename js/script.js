@@ -1,22 +1,8 @@
-//vacaciones y feriados
-//desaparecen asistencias o alumnos de las planillas de los profes
-//Contrato - Javi
-//Sueldo - Javi
-//Planillas - Javi
-//Renuncias - Micaela (primero y despues javi y bel)
-//Certificados - Bel
-//Constancia de trabajo - Mar y Bel
-//Problemas con alumnos - Coordinacion Micaela
-//Horarios equivocados - Coordinacion Micaela
-//Inasistencias consecutivas de alumnos - Coordinacion Micaela
-//Materiales (santi +3 o isa -3)
-//planilla de disponibilidad (Isamara)
-//Capacitaciones y orientación general(santi +3 o isa -3)
-//Asistencia emocional (Jesica) 
-//Inteligencia emocional (Jesica)
 
 //Alumnos bussines (Bianca)
 //Referidos para trabajar (Frank)
+//Transferencias de alumnos (Reasignaciones)
+//Squads (isamara)
 
 //→→Functions←←
     //Function to receive the information about the teacher
@@ -42,9 +28,9 @@
         //Create an html format
         html:
             
-        '<label ><b>Nombre</b></label><input type="text"  id="swal-input1" class="swal2-input" style="color:#d400d4;">' +
-        '<label><b>Num°PA</b></label><input type="text"  id="swal-input2" class="swal2-input"style="color:#d400d4;">' + 
-        '<label><b>Celular</b></label><input type="number"  id="swal-input3" class="swal2-input"style="color:#d400d4;">',
+        '<br><label ><b>Nombre</b></label><br><input type="text"  id="swal-input1" class="swal2-input" style="color:#d400d4;"><br>' +
+        '<br><label><b>Num°PA</b></label><br><input type="text"  id="swal-input2" class="swal2-input"style="color:#d400d4;"><br>' + 
+        '<br><label><b>Celular</b></label><br><input type="number"  id="swal-input3" class="swal2-input"style="color:#d400d4;"><br>',
         
         //When you enter the values
         preConfirm: () => {
@@ -778,7 +764,6 @@
                             else {virtual_asistance_menu()}
                             })
                         break
-                        break
                 
                     case 'Planillas':
 
@@ -1031,27 +1016,147 @@
                             else {virtual_asistance_menu()}
                             })
                         break
-                
-                    
-                    
-                    
-                    
-                        case 'Renuncias':
-                        alert(`Haz seleccionado "Renuncias"`);
-                        break
-                           
-                    } 
+                             
+                    case 'Renuncias':
+                            Swal.fire({
+                                //Text in the alert
+                                title: `<h6>Haz seleccionado <br>"Renuncias"</h6>`,
+    
+                                //Img in the alert
+                                imageUrl: './Img_circle_staff/Circle_Modals/Javier.png',
+                                imageWidth: 350,
+                                imageHeight: 300,
+                                imageAlt: 'Custom image',
+    
+                                //Propieties
+                                showCancelButton: true,
+                                showDenyButton: true,
+                                confirmButtonColor: '#d400d4',
+                                cancelButtonColor: '#00ccff',
+                                confirmButtonText: 'Enviar Mensaje',
+                                cancelButtonText: 'Volver al asistente',
+                                denyButtonText: `Completar formulario`,
+                                denyButtonColor: '#4ecf1b',
+                                padding: '1.7rem',
+                                background: 'linear-gradient(360deg, rgb(9, 14, 53) ,#162052 70% )',
+                                color: '#00ccff',
+                                }).then((result) => {
+                                if (result.isConfirmed) {
+                                //True("Acept")
+                                window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                                virtual_asistance_menu()
+                                //redireccionar a un link
+                                }
+                                //Form 
+                                else if (result.isDenied) {
+                                    function resignation_form(){
+                                    Swal.fire({
+
+                                        //Text in the alert
+                                        title: `<h3 style="justify-content: center;"><b>Formulario de renuncias</b></h3>
+                                        <h5 style="font-size:22px;justify-content: center;">lamentamos que tu experiencia dentro de nuestra institución no haya sido la que esperabas. De todo corazón queremos brindarte nuestras disculpas, agradeciendote por el servicio brindado hasta el dia de la fecha.</h5>
+                                        <h6 style="font-size:16px;justify-content: center;">Para poder gestionar tu proceso de renuncia vamos a necesitar los siguientes datos:</h6>`,
+                                        
+                                        //Propieties
+                                        focusConfirm: false,
+                                        showClass: {popup: 'animate__animated animate__fadeInDown'},
+                                        hideClass: {popup: 'animate__animated animate__fadeOutUp'},
+                                        confirmButtonColor: '#d400d4',
+                                        padding: '1.7rem',
+                                        confirmButtonText: 'Continuar',
+                                        background: 'linear-gradient(360deg, rgb(9, 14, 53) ,#162052 70% )',
+                                        color: '#00ccff',
+                                        allowOutsideClick: false,
+                                        
+                                        //Create an html format
+                                        html:
+                                            
+                                        '<br><label ><b>Nombre:</b></label><br><input type="text"  id="swal-input1" class="swal2-input" style="color:#d400d4;"><br>' +
+                                        '<br><label><b>Num°PA:</b></label><br><input type="text"  id="swal-input2" class="swal2-input"style="color:#d400d4;"><br>' + 
+                                        '<br><label><b>Motivo:</b></label><br><input type="text"  id="swal-input3" class="swal2-input"style="color:#d400d4;"><br>'+
+                                        '<br><label><b>Aviso con anticipación (15dias):</b></label><br><input type="date" id="swal-input4" class="swal2-input"style="color:#d400d4;"><br>'+
+                                        '<br><label><b>Comentarios adicionales:</b></label><br><input type="text"  id="swal-input5" class="swal2-input"style="color:#d400d4;">',
+                                        //When you enter the values
+                                        preConfirm: () => {
+                                            
+                                        return [
+                                            name_teacher_out = document.getElementById('swal-input1').value,
+                                            PA_teacher_out = document.getElementById('swal-input2').value,
+                                            reason_teacher_out = document.getElementById('swal-input3').value,
+                                            advise_teacher_out = document.getElementById('swal-input4').value,
+                                            observations_teacher_out = document.getElementById('swal-input5').value,
+
+                                            Swal.fire({
+                                            //Text in the alert
+                                            html: `<h2 style="justify-content: center;">Ingresaste la siguiente información: </h2>
+                                            <p>Nombre: <strong style="color:#d400d4;">`+name_teacher_out+`</strong></p>
+                                            <p>N°PA:  <strong style="color:#d400d4;">`+PA_teacher_out+`</strong></p>
+                                            <p>Motivo: <strong style="color:#d400d4;">`+reason_teacher_out+`</strong></p>
+                                            <p>Aviso con anticipación (15dias): <strong style="color:#d400d4;">`+advise_teacher_out+`</strong></p>
+                                            <p>Comentarios adicionales: <strong style="color:#d400d4;">`+observations_teacher_out+`</strong></p>
+                                            <br>
+                                            <h7 > Si la información es <u>correcto</u> haz click en <b>aceptar</b>, si necesitas <u>modificar</u> algo haz click en <strong>modificar</strong>?<h7>
+                                            `,
+                                            //Propieties
+                                            icon: 'question',
+                                            showCancelButton: true,
+                                            confirmButtonColor: '#d400d4',
+                                            cancelButtonColor: '#00ccff',
+                                            confirmButtonText: 'Aceptar',
+                                            cancelButtonText: 'Modificar',
+                                            padding: '1.7rem',
+                                            background: 'linear-gradient(360deg, rgb(9, 14, 53) ,#162052 70% )',
+                                            color: '#00ccff',
+                                            allowOutsideClick: false
+                                
+                                            
+                                            //Input decition
+                                            }).then((result) => {
+                                
+                                            //If the user choose 'aceptar'
+                                            if (result.isConfirmed) {
+                                               
+                                                window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher_out + "%0A%0APA: %0A" + PA_teacher_out + "%0A" + "%0A%0AMotivo: %0A" + reason_teacher_out + "%0A" + "%0A%0AAviso con anticipación (15dias): %0A" + advise_teacher_out+ "%0A" + "%0A%0AAviso con anticipación (15dias): %0A" + observations_teacher_out, '_blank');          
+                                                virtual_asistance_menu()
+                                            }
+                                
+                                            //If the user choose 'modificar'
+                                            else{resignation_form()}
+                                            })
+                                        
+                                            ]
+                                        }
+                                    
+                                    })}
+                                
+                                    resignation_form()
+                                }
+                                    
+                                //False("Volver al asistente")
+                                else {virtual_asistance_menu()}
+                                })
+                                
+                            break      
+                } 
                 }
-            })
+        })
     }
            
     
 //→→Variables←←
+    //Initial
     active_virtual_assistance = ''
     name_teacher =''
     PA_teacher = ''
     phone_teacher = ''
 
+    //Resignation
+    name_teacher_out = ''
+    PA_teacher_out = ''
+    reason_teacher_out = ''
+    advise_teacher_out = ''
+    observations_teacher_out = ''
+    
 //Welcome (When the user refresh the site)
     import_teachers_info()
 
