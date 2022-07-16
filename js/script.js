@@ -1,8 +1,10 @@
 
 //Alumnos bussines (Bianca)
 //Referidos para trabajar (Frank)
-//Transferencias de alumnos (Reasignaciones)
+//Transferencias de alumnos (Reasignaciones) → enviar a melina y completar formulario de transferencias (botones)
 //Squads (isamara)
+//Agregar a textos descriptivos de pasos a seguir
+
 
 //→→Functions←←
     //Function to receive the information about the teacher
@@ -29,8 +31,7 @@
         html:
             
         '<br><label ><b>Nombre</b></label><br><input type="text"  id="swal-input1" class="swal2-input" style="color:#d400d4;"><br>' +
-        '<br><label><b>Num°PA</b></label><br><input type="text"  id="swal-input2" class="swal2-input"style="color:#d400d4;"><br>' + 
-        '<br><label><b>Celular</b></label><br><input type="number"  id="swal-input3" class="swal2-input"style="color:#d400d4;"><br>',
+        '<br><label><b>Num°PA</b></label><br><input type="text"  id="swal-input2" class="swal2-input"style="color:#d400d4;"><br>', 
         
         //When you enter the values
         preConfirm: () => {
@@ -38,14 +39,12 @@
         return [
             name_teacher = document.getElementById('swal-input1').value,
             PA_teacher = document.getElementById('swal-input2').value,
-            phone_teacher = document.getElementById('swal-input3').value,
             
             Swal.fire({
             //Text in the alert
             html: `<h2 style="justify-content: center;">Ingresaste la siguiente información: </h2>
             <p>Nombre: <strong style="color:#d400d4;">`+name_teacher+`</strong></p>
             <p>N°PA:  <strong style="color:#d400d4;">`+PA_teacher+`</strong></p>
-            <p>Celular: <strong style="color:#d400d4;">`+phone_teacher+`</strong></p>
         
             <br>
             <h7 > Si la información es <u>correcto</u> haz click en <b>aceptar</b>, si necesitas <u>modificar</u> algo haz click en <strong>modificar</strong>?<h7>
@@ -211,7 +210,7 @@
                           }).then((result) => {
                             if (result.isConfirmed) {
                             //True("Acept")
-                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A"  , '_blank');          
                             virtual_asistance_menu()
                             //redireccionar a un link
                             }
@@ -244,7 +243,7 @@
                           }).then((result) => {
                             if (result.isConfirmed) {
                             //True("Acept")
-                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A"  , '_blank');          
                             //redireccionar a un link
                             virtual_asistance_menu()
                             }
@@ -278,7 +277,7 @@
                           }).then((result) => {
                             if (result.isConfirmed) {
                             //True("Acept")
-                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A"  , '_blank');          
                             //redireccionar a un link
                             virtual_asistance_menu()
                             }
@@ -314,7 +313,7 @@
                               }).then((result) => {
                                 if (result.isConfirmed) {
                                 //True("Acept")
-                                window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                                window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A"  , '_blank');          
                                 //redireccionar a un link
                                 virtual_asistance_menu()
                                 }
@@ -351,7 +350,7 @@
                                 }).then((result) => {
                                 if (result.isConfirmed) {
                                 //True("Acept")
-                                window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                                window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" , '_blank');          
                                 //redireccionar a un link
                                 virtual_asistance_menu()
                                  }
@@ -386,7 +385,7 @@
                           }).then((result) => {
                             if (result.isConfirmed) {
                             //True("Acept")
-                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A"  , '_blank');          
                             //redireccionar a un link
                             virtual_asistance_menu()
                             }
@@ -425,7 +424,7 @@
                               }).then((result) => {
                                 if (result.isConfirmed) {
                                 //True("Acept")
-                                window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                                window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A"  , '_blank');          
                                 //redireccionar a un link
                                 virtual_asistance_menu()
                                 }
@@ -462,7 +461,7 @@
                                 }).then((result) => {
                                 if (result.isConfirmed) {
                                 //True("Acept")
-                                window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                                window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A"  , '_blank');          
                                 //redireccionar a un link
                                 virtual_asistance_menu()
                                  }
@@ -497,7 +496,7 @@
                           }).then((result) => {
                             if (result.isConfirmed) {
                             //True("Acept")
-                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A"  , '_blank');          
                             //redireccionar a un link
                             virtual_asistance_menu()
                             }
@@ -533,7 +532,7 @@
                           }).then((result) => {
                             if (result.isConfirmed) {
                             //True("Acept")
-                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A"  , '_blank');          
                             virtual_asistance_menu()
                             //redireccionar a un link
                             }
@@ -566,7 +565,7 @@
                           }).then((result) => {
                             if (result.isConfirmed) {
                             //True("Acept")
-                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A"  , '_blank');          
                             virtual_asistance_menu()
                             //redireccionar a un link
                             }
@@ -599,7 +598,7 @@
                           }).then((result) => {
                             if (result.isConfirmed) {
                             //True("Acept")
-                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A"  , '_blank');          
                             virtual_asistance_menu()
                             //redireccionar a un link
                             }
@@ -636,7 +635,7 @@
                               }).then((result) => {
                                 if (result.isConfirmed) {
                                 //True("Acept")
-                                window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                                window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A"  , '_blank');          
                                 //redireccionar a un link
                                 virtual_asistance_menu()
                                 }
@@ -672,7 +671,7 @@
                                 }).then((result) => {
                                 if (result.isConfirmed) {
                                 //True("Acept")
-                                window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                                window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A"  , '_blank');          
                                 //redireccionar a un link
                                 virtual_asistance_menu()
                                 }
@@ -709,7 +708,7 @@
                                     if (result.isConfirmed) {
                                         
                                     //True("Acept")
-                                    window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                                    window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A"  , '_blank');          
                                     //redireccionar a un link
                                     virtual_asistance_menu()
                                     }
@@ -749,7 +748,7 @@
                           }).then((result) => {
                             if (result.isConfirmed) {
                             //True("Acept")
-                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A"  , '_blank');          
                             //redireccionar a un link
                             virtual_asistance_menu()
                             }
@@ -794,7 +793,7 @@
                             if (result.isConfirmed) {
 
                             //True("Acept")
-                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A"  , '_blank');          
                             //redireccionar a un link
                             virtual_asistance_menu()
                             }
@@ -833,7 +832,7 @@
                                 if (result.isConfirmed) {
 
                                 //True("Acept")
-                                window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                                window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" , '_blank');          
                                 //redireccionar a un link
                                 virtual_asistance_menu()
                                  }
@@ -871,7 +870,7 @@
                             if (result.isConfirmed) {
 
                             //True("Acept")
-                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A"  , '_blank');          
                             //redireccionar a un link
                             virtual_asistance_menu()
                             }
@@ -909,7 +908,7 @@
                           }).then((result) => {
                             if (result.isConfirmed) {
                             //True("Acept")
-                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A"  , '_blank');          
                             virtual_asistance_menu()
                             //redireccionar a un link
                             }
@@ -942,7 +941,7 @@
                           }).then((result) => {
                             if (result.isConfirmed) {
                             //True("Acept")
-                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A"  , '_blank');          
                             virtual_asistance_menu()
                             //redireccionar a un link
                             }
@@ -975,7 +974,7 @@
                           }).then((result) => {
                             if (result.isConfirmed) {
                             //True("Acept")
-                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A"  , '_blank');          
                             virtual_asistance_menu()
                             //redireccionar a un link
                             }
@@ -1008,7 +1007,7 @@
                           }).then((result) => {
                             if (result.isConfirmed) {
                             //True("Acept")
-                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                            window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A"  , '_blank');          
                             virtual_asistance_menu()
                             //redireccionar a un link
                             }
@@ -1021,7 +1020,7 @@
                             Swal.fire({
                                 //Text in the alert
                                 title: `<h6>Haz seleccionado <br>"Renuncias"</h6>`,
-    
+
                                 //Img in the alert
                                 imageUrl: './Img_circle_staff/Circle_Modals/Javier.png',
                                 imageWidth: 350,
@@ -1043,7 +1042,7 @@
                                 }).then((result) => {
                                 if (result.isConfirmed) {
                                 //True("Acept")
-                                window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" + "%0A%0ACelular: %0A" + phone_teacher , '_blank');          
+                                window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher + "%0A%0APA: %0A" + PA_teacher + "%0A" , '_blank');          
                                 virtual_asistance_menu()
                                 //redireccionar a un link
                                 }
@@ -1116,7 +1115,7 @@
                                             //If the user choose 'aceptar'
                                             if (result.isConfirmed) {
                                                
-                                                window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher_out + "%0A%0APA: %0A" + PA_teacher_out + "%0A" + "%0A%0AMotivo: %0A" + reason_teacher_out + "%0A" + "%0A%0AAviso con anticipación (15dias): %0A" + advise_teacher_out+ "%0A" + "%0A%0AAviso con anticipación (15dias): %0A" + observations_teacher_out, '_blank');          
+                                                window.open("https://api.whatsapp.com/send?phone=123456789&text=Nombre: %0A" + name_teacher_out + "%0A%0APA: %0A" + PA_teacher_out + "%0A" + "%0A%0AMotivo: %0A" + reason_teacher_out + "%0A" + "%0A%0AAviso con anticipación (15dias): %0A" + advise_teacher_out+ "%0A" + "%0A%0AComentarios adicionales: %0A" + observations_teacher_out, '_blank');          
                                                 virtual_asistance_menu()
                                             }
                                 
@@ -1148,7 +1147,6 @@
     active_virtual_assistance = ''
     name_teacher =''
     PA_teacher = ''
-    phone_teacher = ''
 
     //Resignation
     name_teacher_out = ''
