@@ -193,7 +193,7 @@
                         Swal.fire({
                             //Text in the alert
                             title: `<h6>Haz seleccionado <br>"Asistencia emocional"</h6>`,
-                            html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de los grandes esfuerzos que implica la labor de un educador, por lo que le proveemos un espacio para que puedas <u>expresarte libremente</u> en cada aspecto de tu estadia con nosotros.</p>`,
+                            html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos <b>concientes de los grandes esfuerzos que implica la labor de un educador</b>, por lo que le proveemos un espacio para que puedas <u>expresarte libremente</u> en cada aspecto de tu estadia con nosotros.</p>`,
                             //Img in the alert
                             imageUrl: './Img_circle_staff/Circle_Modals/Jesica.png',
                             imageWidth: 350,
@@ -226,7 +226,7 @@
                             Swal.fire({
                             //Text in the alert
                             title: `<h6>Haz seleccionado <br>"Inteligencia emocional"</h6>`,
-                            html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de los grandes esfuerzos que implica la labor de un educador, por lo que le proveemos personal especializado para poder <u>identificar y gestionar tus emociones y las de los demas</u>, durante tu estadia con nosotros.</p>`,
+                            html: `<p style="font-size:16px;justify-content: center;">Desde el area academica <b>estamos concientes de los grandes esfuerzos que implica la labor de un educador</b>, por lo que le proveemos personal especializado para poder <u>identificar y gestionar tus emociones y las de los demas</u>, durante tu estadia con nosotros.</p>`,
                             //Img in the alert
                             imageUrl: './Img_circle_staff/Circle_Modals/Jesica.png',
                             imageWidth: 350,
@@ -259,7 +259,7 @@
                         Swal.fire({
                             //Text in the alert
                             title: `<h6>Haz seleccionado <br>"Problemas con alumnos (varios)"</h6>`,
-                            html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia del acompañamiento de cada estudiante del instituto, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar cualquier inconveniente proveniente de tus estudiantes</u> durante tu estadia con nosotros.</p>`,
+                            html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia del <b>acompañamiento de cada estudiante del instituto</b>, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar cualquier inconveniente proveniente de tus estudiantes</u> durante tu estadia con nosotros.</p>`,
 
 
                             //Img in the alert
@@ -294,7 +294,7 @@
                             Swal.fire({
                                 //Text in the alert
                                 title: `<h6>Haz seleccionado <br>"Capacitaciones y orientación pedagogica general"</h6>`,
-                                html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia de formar profesionales cada vez más capacitados, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar cualquier duda pedagogica</u> durante tu estadia con nosotros.</p>
+                                html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia de <b>formar profesionales cada vez más capacitados</b>, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar cualquier duda pedagogica</u> durante tu estadia con nosotros.</p>
                                 <br><p>Si tienes <strong>más de 3 meses en el instituto</strong> puedes hacer <u>click</u> en el boton "Tengo +3 meses".</p>`,
 
                                 //Img in the alert
@@ -333,7 +333,7 @@
                                 Swal.fire({
                                         //Text in the alert
                                         title: `<h6>Haz seleccionado <br>"Capacitaciones y orientación general"</h6>`,
-                                        html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia de formar profesionales cada vez más capacitados, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar cualquier duda pedagogica</u> durante tu estadia con nosotros.</p>
+                                        html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia de <b>formar profesionales cada vez más capacitados</b>, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar cualquier duda pedagogica</u> durante tu estadia con nosotros.</p>
                                         <br><p>Si tienes <strong>menos de 3 meses en el instituto</strong> puedes hacer <u>click</u> en el boton "Tengo -3 meses".</p>`,
                     
                                         //Img in the alert
@@ -375,7 +375,7 @@
                             Swal.fire({
                                 //Text in the alert
                                 title: `<h6>Haz seleccionado <br>"Materiales"</h6>`,
-                                html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia de formar profesionales cada vez más capacitados, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar sobre materiales academicos</u> durante tu estadia con nosotros.</p>
+                                html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia de <b>formar profesionales cada vez más capacitados</b>, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar sobre materiales academicos</u> durante tu estadia con nosotros.</p>
                                 <br><p>Si tienes <strong>más de 3 meses en el instituto</strong> puedes hacer <u>click</u> en el boton "Tengo +3 meses".</p>`,
     
         
@@ -415,7 +415,7 @@
                                 Swal.fire({
                                         //Text in the alert
                                         title: `<h6>Haz seleccionado <br>"Materiales"</h6>`,
-                                        html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia de formar profesionales cada vez más capacitados, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar sobre materiales academicos</u> durante tu estadia con nosotros.</p>
+                                        html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la <b>importancia de formar profesionales cada vez más capacitados</b>, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar sobre materiales academicos</u> durante tu estadia con nosotros.</p>
                                         <br><p>Si tienes <strong>más de 3 meses en el instituto</strong> puedes hacer <u>click</u> en el boton "Tengo -3 meses".</p>`,
                                 
                                         //Img in the alert
@@ -457,7 +457,7 @@
                         Swal.fire({
                             //Text in the alert
                             title: `<h6>Haz seleccionado <br>"Haz seleccionado "Vacaciones o Feriados"</h6>`,
-                            html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia de cuidar y premiar a nuestros profesores dedicados, por lo que le proveemos de personal especializado para que puedas <u>consultar cualquier duda proveniente de feriados o vacaciones</u> durante tu estadia con nosotros.</p>`,
+                            html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia de <b>cuidar y premiar a nuestros profesores dedicados</b>, por lo que le proveemos de personal especializado para que puedas <u>consultar cualquier duda proveniente de feriados o vacaciones</u> durante tu estadia con nosotros.</p>`,
 
                             //Img in the alert
                             imageUrl: './Img_circle_staff/Circle_Modals/MariaPaula.png',
@@ -491,7 +491,7 @@
                         Swal.fire({
                             //Text in the alert
                             title: `<h6>Haz seleccionado <br>"Haz seleccionado "Certificaciones (alumnos)"</h6>`,
-                            html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia de valorar a nuestros estudiantes dedicados, por lo que le proveemos de personal especializado para que puedas <u>consultar y gestionar cualquier duda proveniente de certificaciónes de los estudiantes</u> durante tu estadia con nosotros.</p>`,
+                            html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia de <b>valorar a nuestros estudiantes dedicados</b>, por lo que le proveemos de personal especializado para que puedas <u>consultar y gestionar cualquier duda proveniente de certificaciónes de los estudiantes</u> durante tu estadia con nosotros.</p>`,
 
                             //Img in the alert
                             imageUrl: './Img_circle_staff/Circle_Modals/MariaPaula.png',
@@ -525,7 +525,7 @@
                         Swal.fire({
                             //Text in the alert
                             title: `<h6>Haz seleccionado <br>"Haz seleccionado "Constancia de trabajo o estudio (profesores o alumnos)"</h6>`,
-                            html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia de valorar a nuestros profesores dedicados, por lo que le proveemos de personal especializado para que puedas <u>consultar y gestionar cualquier constancia de <strong>prestación de servicios</strong> de los profesores</u> durante tu estadia con nosotros.</p>`,
+                            html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia de <b>valorar a nuestros profesores dedicados</b>, por lo que le proveemos de personal especializado para que puedas <u>consultar y gestionar cualquier constancia de <strong>prestación de servicios</strong> de los profesores</u> durante tu estadia con nosotros.</p>`,
 
                             //Img in the alert
                             imageUrl: './Img_circle_staff/Circle_Modals/MariaPaula.png',
@@ -560,7 +560,7 @@
                             Swal.fire({
                                 //Text in the alert
                                 title: `<h6>Haz seleccionado <br>"Horarios equivocados"</h6>`,
-                                html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia de acompañar a nuestros estudiantes lo mas personalizado posible, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar cualquier duda sobre horarios de los alumnos</u> durante tu estadia con nosotros.</p>
+                                html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia de <b>acompañar a nuestros estudiantes de la manera más personalizada posible</b>, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar cualquier duda sobre horarios de los alumnos</u> durante tu estadia con nosotros.</p>
                                 <br><p>Si tienes una duda con un estudiante <strong> deberas comunicarte con el asistente responsable (dependiendo del ID del alumno) </strong> haciendo <u>click</u> en el boton "Sig." hasta encontrar las iniciales correctas.</p>`,
 
 
@@ -599,7 +599,7 @@
                             Swal.fire({
                                 //Text in the alert
                                 title: `<h6>Haz seleccionado <br>"Horarios equivocados"</h6>`,
-                                html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia de acompañar a nuestros estudiantes lo mas personalizado posible, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar cualquier duda sobre horarios de los alumnos</u> durante tu estadia con nosotros.</p>
+                                html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia de <b>acompañar a nuestros estudiantes de la manera más personalizada posible</b>, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar cualquier duda sobre horarios de los alumnos</u> durante tu estadia con nosotros.</p>
                                 <br><p>Si tienes una duda con un estudiante <strong> deberas comunicarte con el asistente responsable (dependiendo del ID del alumno)</strong> haciendo <u>click</u> en el boton "Sig." hasta encontrar las iniciales correctas.</p>`,
 
 
@@ -638,7 +638,7 @@
                                 Swal.fire({
                                     //Text in the alert
                                     title: `<h6>Haz seleccionado <br>"Horarios equivocados"</h6>`,
-                                    html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia de acompañar a nuestros estudiantes lo mas personalizado posible, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar cualquier duda sobre horarios de los alumnos</u> durante tu estadia con nosotros.</p>
+                                    html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia de <b>acompañar a nuestros estudiantes de la manera más personalizada posible</b>, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar cualquier duda sobre horarios de los alumnos</u> durante tu estadia con nosotros.</p>
                                     <br><p>Si tienes una duda con un estudiante <strong> deberas comunicarte con el asistente responsable (dependiendo del ID del alumno)</strong> haciendo <u>click</u> en el boton "Sig." hasta encontrar las iniciales correctas.</p>`,
         
                                     //Img in the alert
@@ -682,7 +682,7 @@
                         Swal.fire({
                             //Text in the alert
                             title: `<h6>Haz seleccionado <br>"Inasistencias consecutivas del alumno"</h6>`,
-                            html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia de acompañar a nuestros estudiantes lo mas personalizado posible, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar cualquier duda sobre la continuidad de un estudiante en el instituto</u> durante tu estadia con nosotros.</p>
+                            html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia de <b>acompañar a nuestros estudiantes de la manera más personalizada posible</b>, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar cualquier duda sobre la continuidad de un estudiante en el instituto</u> durante tu estadia con nosotros.</p>
                             <br><p>Si tienes una duda con un estudiante <strong> deberas: <br> 
                             <ol>
                             <li>Enviar un mensaje al responsable de coordinación administrativa, enviando el ID y la situacion.</li>
@@ -736,7 +736,7 @@
                             Swal.fire({
                             //Text in the alert
                             title: `<h6>Haz seleccionado <br>"Planillas de asistencia del profesor"</h6>`,
-                            html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia del control metrico del profesor, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar cualquier duda relacionada a las planillas de asistencia</u> durante tu estadia con nosotros.</p>
+                            html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia del <b>control metrico del profesor</b>, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar cualquier duda relacionada a las planillas de asistencia</u> durante tu estadia con nosotros.</p>
                             <br><p>Si tienes <strong>dudas de como completar correctamente la planilla </strong> puedes hacer <u>click</u> en el boton "¿Cómo completarla?".</p>`,
 
                             //Img in the alert
@@ -823,7 +823,7 @@
                         Swal.fire({
                             //Text in the alert
                             title: `<h6>Haz seleccionado <br>"Planillas de disponibilidad"</h6>`,
-                            html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia del control metrico del profesor, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar cualquier duda relacionada a las planillas de disponibilidad</u> durante tu estadia con nosotros.</p>`,
+                            html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia del <b>control metrico del profesor</b>, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar cualquier duda relacionada a las planillas de disponibilidad</u> durante tu estadia con nosotros.</p>`,
 
 
                             //Img in the alert
@@ -858,7 +858,7 @@
                             Swal.fire({
                                 //Text in the alert
                                 title: `<h6>Haz seleccionado <br>"Squads"</h6>`,
-                                html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia del control metrico y progreso del profesor, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar cualquier duda relacionada a los squads</u> durante tu estadia con nosotros.</p>`,
+                                html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia del <b>control metrico y progresivo del profesor</b>, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar cualquier duda relacionada a los squads</u> durante tu estadia con nosotros.</p>`,
         
                                 //Img in the alert
                                 imageUrl: './Img_circle_staff/Circle_Modals/Isamara.png',
@@ -893,7 +893,7 @@
                         Swal.fire({
                             //Text in the alert
                             title: `<h6>Haz seleccionado <br>"Contratos"</h6>`,
-                            html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia de un codigo de convivencia entre el prestador de servicio y el contratista, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar cualquier duda relacionada a tu contrato</u> durante tu estadia con nosotros.</p>`,
+                            html: `<p style="font-size:16px;justify-content: center;">Desde el area academica estamos conciente de la importancia de un <b>codigo de convivencia entre el prestador de servicio y el contratista</b>, por lo que le proveemos de personal especializado para que puedas <u>gestionar y consultar cualquier duda relacionada a tu contrato</u> durante tu estadia con nosotros.</p>`,
 
                             //Img in the alert
                             imageUrl: './Img_circle_staff/Circle_Modals/Javier.png',
