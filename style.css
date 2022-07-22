@@ -51,7 +51,7 @@ html::-webkit-scrollbar {
     
     nav ul{
       list-style: none;
-      background: linear-gradient(315deg,#00ccff,#d400d4);
+      background: linear-gradient(315deg,rgb(9, 14, 53),#d400d4,rgb(9, 14, 53));
       text-align: center;
       box-shadow: 0 0 2px rgba(48, 48, 48, 0.589),
       0 0 5px rgba(255, 255, 255, 0.589),
@@ -84,7 +84,7 @@ html::-webkit-scrollbar {
     .hide{
       font-size: 22px;
       padding: 16px;
-      background: linear-gradient(315deg,#00ccff,#d400d4);
+      background: linear-gradient(315deg,rgb(9, 14, 53),#d400d4,rgb(9, 14, 53));
       color: white;
       cursor: pointer;
       display: none;
