@@ -161,7 +161,7 @@ html::-webkit-scrollbar {
     .staff_circles{
         display: flex;
         flex-wrap: wrap;
-        padding: 25px;
+        padding: 2px;
         justify-content: center;
         min-height: 100vh;
         background: rgb(9, 14, 53);
