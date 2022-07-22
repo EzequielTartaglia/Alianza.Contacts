@@ -76,49 +76,6 @@
                     showConfirmButton: false,
                     timer: 1500
                 })
-                //Wait between the "success" and the other function
-                setTimeout(function(){
-                    Swal.fire({
-    
-                        //Text in the alert
-                        title: `<h6 style="justify-content: center;">Si desea activar la <u>guia</u> asistencial para contactar al personal correspondiente haz click en <strong>'Aceptar'</strong>. Si desea <u>acceder al directorio</u> haz click en <strong>'Busqueda manual'</strong>?</h6>`,
-                        
-                        //Propieties
-                        icon: 'question',
-                        showCancelButton: true,
-                        confirmButtonColor: '#d400d4',
-                        cancelButtonColor: '#00ccff',
-                        padding: '1.7rem',
-                        background: 'linear-gradient(360deg, rgb(9, 14, 53) ,#162052 70% )',
-                        color: '#00ccff',     
-                        cancelButtonText:'Busqueda manual',
-                        confirmButtonText: 'Guia asistencial'
-                    
-                        }).then((result) => {
-                        if (result.isConfirmed) {
-                        //True("Acept")
-                        virtual_asistance_menu()
-                        }
-                        //False("Cancel")
-                        else {
-                            Swal.fire({
-                    
-                                //Text in the alert
-                                title: `<h6 style="justify-content: center;">Puedes continuar con la busqueda manual. Si quieres <u>reiniciar</u> la guia asistencial puedes refrescar la pagina.</h6>`,
-                                
-                                //Propieties
-                                confirmButtonColor: '#d400d4',
-                                padding: '1.7rem',
-                                background: 'linear-gradient(360deg, rgb(9, 14, 53) ,#162052 70% )',
-                                color: '#00ccff',     
-                                confirmButtonText: 'Entendido'
-                        
-                            })
-                        }
-                        })
-                }, 1750)
-                
-                    
             }
 
             //If the user choose 'modificar'
@@ -1138,19 +1095,31 @@
     
 //→→Variables←←
     //Initial
-    active_virtual_assistance = ''
-    name_teacher =''
-    PA_teacher = ''
+    let active_virtual_assistance = ''
+    let name_teacher =''
+    let PA_teacher = ''
 
     //Resignation
-    name_teacher_out = ''
-    PA_teacher_out = ''
-    reason_teacher_out = ''
-    advise_teacher_out = ''
-    observations_teacher_out = ''
-    
-//Welcome (When the user refresh the site)
-    import_teachers_info()
+    let name_teacher_out = ''
+    let PA_teacher_out = ''
+    let reason_teacher_out = ''
+    let advise_teacher_out = ''
+    let observations_teacher_out = ''
 
+    //Settings from html 
+    let header = document.querySelector('#header')
+    
+//change header when scroll
+    
+    window.addEventListener('scroll',()=>{
+        if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            header.classList.add('shrink')
+        } else {
+            header.classList.remove('shrink')
+        }
+    })
+
+//Welcome (When the user refresh the site)
+import_teachers_info()
 
     
