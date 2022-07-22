@@ -5,10 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Guia de contactos - Alianza</title>
 </head>
 <body>
+     <!-- header -->
+      <header id="header">
 
+        <nav id="header_nav">
+
+        <ul>
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="#">Undefined</a></li>
+            <li><a href="#">Undefined</a></li>
+            <li><a href="#"onclick="virtual_asistance_menu()">Asistente virtual</a></li>
+            <li><a href="#staff">Contactos staff</a></li>
+    </ul>
+    <div class="hide">
+    <i class="fa fa-bars" aria-hidden="true"> Menu</i>
+    </div>
+
+        </nav>
+        
+    </header> 
+    <!-- end header -->
+
+    <div>
     <!-- Animated title -->
     <div class="wrapper">
     <div class="static_txt">We're </div>
@@ -20,7 +42,7 @@
     </ul>
     </div>
     <!-- Circles -->
-    <div class="staff_circles">
+    <div class="staff_circles" id="staff">
 
     <div class="Column1">
         
@@ -246,10 +268,19 @@
     </div>
 
   </div>
+</div>
   <div class="credit"> Alianza&#174; | Desarrollado por <span class="credito"><a href="https://www.linkedin.com/in/ezequieltartaglia/" target="blank">Ezequiel M. Tartaglia</a></span> | Todos los derechos reservados 2022&copy;</div>
-
+    
+    <!-- J query script -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+      $(".hide").on('click', function() {
+        $("nav ul").toggle('slow');
+      })
+    </script>
+    <!-- Sweet Alert 2 script -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+    
 </body>
 <script src="./js/script.js"></script>
 </html>
