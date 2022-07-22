@@ -12,8 +12,92 @@ body
     min-height: 100vh;
 }
 
-/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* Scroll */
 
+html::-webkit-scrollbar {
+    width: .4rem;
+  }
+  
+  html::-webkit-scrollbar-track {
+    background: rgb(19, 19, 19);
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    font-weight: bold;
+    background: #00ccff;
+    border-radius: 5rem;
+  }
+  
+/*End Scroll */
+
+ /*-------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Nav */
+
+    /*Header nav Start*/ 
+    #header_nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right:0;
+    width: 100%;
+    background-color: transparent;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    transition: height 0.1s ease 0s, background-color 0.3s ease 0s;
+    
+    }
+    
+    nav ul{
+      list-style: none;
+      background: linear-gradient(315deg,#00ccff,#d400d4);
+      text-align: center;
+      box-shadow: 0 0 2px rgba(48, 48, 48, 0.589),
+      0 0 5px rgba(255, 255, 255, 0.589),
+      0 0 10px #070a1c,
+      0 0 20px rgba(255, 255, 255, 0.589);
+      
+    }
+    
+    nav ul li{
+      display: inline-block;
+      padding: 20px;
+      transition: all ease-in-out 250ms;
+      
+    }
+    
+    ul li a {
+      color: white;
+      font-weight: bolder;
+      text-decoration: none;
+    }
+    
+    nav ul li:hover{
+      background: linear-gradient(315deg,#00ccff,#d400d4);
+      box-shadow: 0 0 2px #00ccff,
+      0 0 10px #00ccff,
+      0 0 20px #00ccff,
+      0 0 40px #00ccff;
+    }
+    
+    .hide{
+      font-size: 22px;
+      padding: 16px;
+      background: linear-gradient(315deg,#00ccff,#d400d4);
+      color: white;
+      cursor: pointer;
+      display: none;
+      box-shadow: 0 0 2px rgba(48, 48, 48, 0.589),
+      0 0 5px rgba(160, 158, 158, 0.589),
+      0 0 10px #070a1c,
+      0 0 20px rgba(160, 158, 158, 0.589);
+    
+    }
+    
+/*End Nav */
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
 
 /* Animated title */
     .wrapper{
@@ -29,7 +113,7 @@ body
         font-weight: 550;
     }
     .wrapper .dynamic_txts{
-    margin-left: 15px;
+    margin-left: 1.5rem;
     height: 90px;
     line-height: 90px;
     overflow: hidden;
@@ -61,7 +145,7 @@ body
         height: 130%;
         width: 100%;
         background: rgb(9, 14, 53);
-        border-left: 2px solid #00ccff;
+        border-left: 5px solid #00ccff;
         animation: typing 1.5s steps(10) infinite;
     }
     @keyframes typing {
@@ -217,4 +301,37 @@ input[type=number]::-webkit-outer-spin-button {
 
  /*End Credits and research */
   
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Media querys */
+
+@media  (max-width: 768px){
+  
+  ul li{
+    width: 100%;
+    padding: 16px;
+    text-align: left;
+    list-style: none;
+  }
+  nav ul {
+    display: none;
+    
+  }
+  nav ul li:hover{
+    background:none;
+    box-shadow: 0 0 2px #00ccff,
+    0 0 10px #00ccff,
+    0 0 20px #00ccff,
+    0 0 40px #00ccff;
+    cursor: pointer;
+  }
+  .hide{
+    display: block;
+  }
+  .wrapper .dynamic_txts li{
+    padding: 0;
+  }
+
+}
+
 /*-------------------------------------------------------------------------------------------------------------------------------*/
